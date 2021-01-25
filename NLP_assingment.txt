@@ -1,0 +1,31 @@
+NLP 목차
+1.관련 이론
+2.구현 알고리즘
+3.구현사례
+4.실제활용사례
+
+----------------------------------------------------------------------------------
+
+* KoSpeech(STT) 모델 <- Open-Source Toolkit
+* KoSpeech  사전 학습된 모델 테스트(infer.sh)에 요구하는 모델이 없음 ???
+* STT 모델 학습에 batch_size를 6으로 수정하여 진행(1000->0.11시간 소요)
+* Kaldi 를 재사용 하기 위해서 재설치 <- Kaldi ???
+* Zeroth 재설치 <- Zeroth ???
+* Zeroth 학습과정에 nvidia-smi-compute_mode=3 설정
+* 오디오 Resampling(librosa 활용) -> Zeroth를 사용하는데 필요한 오디오 포맷
+  16bit,16000hz
+
+----------------------------------------------------------------------------------
+
+* Speaker-Diarization : Uisrnn
+* STT : Zeroth
+
+--------------Process------------------------------------------------------------
+
+녹음파일 -> Resample -> 화자 분할(uisrnn-Speaker-Diarization) -> DB insert ->
+DB Select -> 파일 Slicing -> STT 진행(Zeroth) -> 맞춤법 검사(py-hanshell) ->
+DB Update
+
+----------------------------------------------------------------------------------
+
+
