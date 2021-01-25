@@ -1229,9 +1229,9 @@ void main()
 
 int main(void)
 {
-	int num = 0;
+	int num = 1;
 
-	while (num<5)
+	while (num<20)
 	{
 		printf("Hello world! %d \n", num);
 		num++;
