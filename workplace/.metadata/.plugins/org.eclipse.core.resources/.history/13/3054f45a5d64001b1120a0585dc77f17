@@ -1,0 +1,17 @@
+
+public class Ex10 {
+	public static void main(String[] args){
+		int n;
+		
+//		while(){
+//			if(n%2==0){
+//				System.out.println(n);
+//			}
+//			else if(n%7==0){
+//				System.out.println(n);
+//			}
+//			break;
+		}
+	}
+
+}

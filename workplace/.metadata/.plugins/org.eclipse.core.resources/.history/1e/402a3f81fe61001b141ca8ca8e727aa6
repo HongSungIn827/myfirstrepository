@@ -1,0 +1,17 @@
+
+public class Ex09 {
+	public static void main(String[] args){
+		
+		int num1 = 3;
+		int sum = 0;
+		
+		sum += num1;
+		
+		System.out.println(sum+=num1);
+		
+//		System.out.println(3+6);
+//		System.out.println(3+6+9);
+//		System.out.println(3+6+9+12);
+	}
+
+}

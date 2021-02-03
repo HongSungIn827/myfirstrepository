@@ -1,0 +1,12 @@
+
+public class Ex09 {
+	public static void main(String[] args){
+		int n = 1;
+		
+		while(n>0 && n<101){
+			n++;
+		}
+		System.out.println(n);
+	}
+
+}

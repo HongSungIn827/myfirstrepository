@@ -1,0 +1,12 @@
+
+public class Ex04 {
+	public static void main(String[] args){
+		int num = 5;
+		
+		while(num>=0){
+			System.out.println("I like Java and C "+num);
+			--num;
+		}
+	}
+
+}

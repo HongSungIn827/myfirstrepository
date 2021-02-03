@@ -1,0 +1,13 @@
+
+public class Ex07 {
+	public static void main(String[] args){
+		int n = 24;
+		
+		switch(n){
+		case 1:
+			System.out.println("");
+			break;
+		}
+	}
+
+}
