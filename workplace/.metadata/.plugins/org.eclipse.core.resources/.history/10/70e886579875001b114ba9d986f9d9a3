@@ -1,0 +1,7 @@
+
+public class Circle {
+	int rad;
+	Circle(int r){
+		rad = r;
+	}
+}

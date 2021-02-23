@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class EMain {
+	public static void main(String[] args){
+		Employee emp = new Employee();
+//		emp.name = "홍길동";
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("이름 입력");
+		String name = scan.nextLine();
+		emp.setName(name);
+		
+		System.out.println("주민번호 입력");
+		String Jumin = scan.nextLine();
+		emp.setJumin(Jumin);
+		
+		System.out.println("연봉 입력");
+		int sal = scan.nextInt();
+		emp.setSal(sal);
+		
+		emp.doPrint();
+	}
+}

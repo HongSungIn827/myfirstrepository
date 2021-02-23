@@ -1,0 +1,8 @@
+
+public class EMain {
+	public static void main(String[] args){
+		Employee emp = new Employee();
+//		emp.name = "ȫ�浿";
+		emp.setName("ȫ�浿");
+	}
+}
