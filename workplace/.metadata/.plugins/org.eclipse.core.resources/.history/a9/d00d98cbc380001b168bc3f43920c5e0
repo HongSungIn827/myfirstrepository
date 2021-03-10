@@ -1,0 +1,6 @@
+class StringInst {
+	public static void showString(String str){
+		System.out.println(str);
+		System.out.println(str.length());
+	}
+}

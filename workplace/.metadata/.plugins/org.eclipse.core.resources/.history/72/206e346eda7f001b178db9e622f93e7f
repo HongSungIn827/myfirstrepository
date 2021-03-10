@@ -1,0 +1,32 @@
+
+public class BankAccountPO {
+	
+	// 예금 잔액
+	static int balance = 0;
+	
+	// main 메소드
+	public static void main(String[] args){
+		deposit(30000);
+		checkMyBalance();
+		withdraw(10000);
+		checkMyBalance();
+	}
+	
+	// 입금 메소드
+	public static int deposit(int amount){
+		balance+=amount;
+		return balance;
+	}
+	
+	// 출금 메소드
+	public static int withdraw(int amount){
+		balance-=amount;
+		return balance;
+	}
+	
+	// 조회 메소드
+	public static int checkMyBalance(){
+		System.out.println("잔액 : "+balance);
+		return balance;
+	}
+}

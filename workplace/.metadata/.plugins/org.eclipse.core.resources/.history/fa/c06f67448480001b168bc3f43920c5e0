@@ -1,0 +1,12 @@
+
+class BuildString {
+	public static void main(String[] args){
+		StringBuilder stbuf = new StringBuilder("123");
+		
+		stbuf.append(45678);
+		System.out.println(stbuf.toString());
+		
+		stbuf.delete(1, 8);
+		System.out.println(stbuf.toString());
+	}
+}

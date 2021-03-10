@@ -1,0 +1,24 @@
+class BankAccount0{
+	int balance = 0;
+	
+	public int deposit(int amount){
+		balance+=amount;
+		return balance;
+	}
+	
+	public int withdraw(int amount){
+		balance-=amount;
+		return balance;
+	}
+	
+	public int checkMyBalance(){
+		System.out.println("ภÜพื : "+balance);
+		return balance;
+	}
+}
+
+class PassingRef {
+	public static void main(String[] args){
+		BankAccount0 ref = new BankAccount0();
+	}
+}

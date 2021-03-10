@@ -1,0 +1,8 @@
+
+public class Person {
+	private String name;
+	private int age;
+	
+	// 생성자 자동 만들기 alt + shift + s 그리고 o
+	
+}

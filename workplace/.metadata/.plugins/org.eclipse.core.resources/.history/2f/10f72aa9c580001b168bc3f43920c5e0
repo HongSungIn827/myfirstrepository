@@ -1,0 +1,15 @@
+
+class ImmutableString {
+	public static void main(String[] args){
+		String str1 = "Simple String";
+		String str2 = "Simple String";
+		
+		String str3 = new String("Simple String");
+		String str4 = new String("Simple String");
+		
+		System.out.println(str1);
+		System.out.println(str2);
+		System.out.println(str3);
+		System.out.println(str4);
+	}
+}

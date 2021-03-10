@@ -1,0 +1,39 @@
+class BankAccount1{
+	int balance = 0;
+	
+	public int deposit(int amount){
+		balance+=amount;
+		System.out.println("ภÜพื deposit: "+balance);
+
+		return balance;
+	}
+	
+	public int withdraw(int amount){
+		balance-=amount;
+		System.out.println("ภÜพื withdraw: "+balance);
+
+		return balance;
+	}
+	
+	public int checkMyBalance(){
+		System.out.println("ภÜพื : "+balance);
+		return balance;
+	}
+}
+
+
+class DupRef {
+	public static void main(String[] args){
+		BankAccount1 ref1 = new BankAccount1();
+		BankAccount1 ref2 = new BankAccount1();
+		
+		ref1.deposit(3000);
+		ref2.deposit(5000);
+		
+		ref1.withdraw(1000);
+		ref2.withdraw(2000);
+		
+		ref1.checkMyBalance();
+		ref2.checkMyBalance();
+	}
+}
