@@ -1,0 +1,58 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+public class AtableMain {
+	
+	public void insertAtable(){
+		// try 구문안에 있는 내용 실행하다가 에러가 발생하면 catch로 빠진다.
+				/*
+				 * 1.jar 파일 추가 확인
+				 * 2.DB 연결
+				 * 3.SQL 구문작성
+				 */
+				Connection conn = null;
+				PreparedStatement pstmt = null;
+				try{
+					Class.forName("oracle.jdbc.driver.OracleDriver");
+					conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","AI","1234");
+					System.out.println("DB연결성공");
+					pstmt = conn.prepareStatement("INSERT INTO ATABLE "+
+												"(IDX, NAME, GENDER, REMARK) "+
+												"VALUES "+
+												"('1', 'qqq', 'www', 'eee')");
+					pstmt.executeUpdate();
+
+					
+				}catch(Exception e){
+					System.out.println("에러 그 클래스 파일 없음");
+				}
+				finally{
+					try {
+						conn.close();
+					} catch (SQLException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+	}
+	
+	public void updateAtable(){}
+	
+	public AtableMain(){
+		Scanner scan = new Scanner(System.in);
+		System.out.println("뭐할래? 1번 insert 2번update 3번delete 4번select");
+		int select = scan.nextInt();
+		if(select == 1)
+			insertAtable();
+		else if(select == 2)
+			updateAtable();
+	}
+	
+	public static void main(String[] args){
+		
+		new AtableMain();
+	}
+}

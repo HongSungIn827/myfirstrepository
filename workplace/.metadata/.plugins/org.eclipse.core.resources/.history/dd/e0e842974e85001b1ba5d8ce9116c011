@@ -1,0 +1,17 @@
+
+public class AtableMain {
+	
+	public AtableMain(){
+		// try  구문안에 있는 내용 실행하다가 에러가 발생하면 catch로 빠진다.
+		try{
+			
+		}catch(Exception e){
+			
+		}
+	}
+	
+	public static void main(String[] args){
+		
+		new AtableMain();
+	}
+}

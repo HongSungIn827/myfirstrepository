@@ -1,0 +1,7 @@
+
+public class Ex02_Review {
+	public static void main(String[] args){
+		Box[] ar = new Box[5];
+		System.out.println("length : "+ar.length);
+	}
+}
