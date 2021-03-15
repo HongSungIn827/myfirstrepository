@@ -1,0 +1,11 @@
+
+public class Ex02 {
+	
+	Ex02(){
+		Scanner scan = new Scanner(System.in);
+	}
+	
+	public static void main(String[] args){
+		new Ex02();
+	}
+}
