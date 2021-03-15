@@ -1,0 +1,25 @@
+	
+public class Ex02 {
+	public static void main(String[] args){
+		StringBuffer sb = new StringBuffer();
+		sb.append("Seize");
+		sb.append(" ");
+		sb.append("the day");
+		
+		System.out.println(sb.toString());
+		System.out.println(sb);
+	}
+
+//	private static char[] hashcode(StringBuffer sb) {
+//		// TODO Auto-generated method stub
+//		StringBuffer sb1 = new StringBuffer();
+//		sb1.append("Seize");
+//		sb1.append(" ");
+//		sb1.append("the day");
+//		
+//		System.out.println(sb1.toString());
+//		System.out.println(sb1);
+//		System.out.println(hashcode(sb1));
+//		return StringBuffer;
+//	}
+}	

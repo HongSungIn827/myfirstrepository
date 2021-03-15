@@ -1,0 +1,21 @@
+	
+public class Ex02 {
+	public static void main(String[] args){
+		StringBuffer sb = new StringBuffer();
+		sb.append("Seize");
+		sb.append(" ");
+		sb.append("the day");
+		boolean x = hashcode(sb);
+		
+		System.out.println(x);
+	}
+
+	private static boolean hashcode(StringBuffer sb1) {
+		// TODO Auto-generated method stub
+		
+		return hashcode(sb1);
+		
+		
+//		return String;
+	}
+}	

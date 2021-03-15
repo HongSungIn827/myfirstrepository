@@ -1,0 +1,7 @@
+
+public class Ex03 {
+	public static void main(String[] args){
+		String str1 = "AAA";
+		String str2 = "AAA";
+	}
+}

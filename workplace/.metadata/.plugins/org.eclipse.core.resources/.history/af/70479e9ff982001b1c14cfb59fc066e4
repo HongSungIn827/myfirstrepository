@@ -1,0 +1,9 @@
+
+public class ArrayList {
+	public static void main(String[] args){
+		ArrayList pitches = new ArrayList();
+		pitches.add("139");
+		pitches.add("149");
+		pitches.add("159");
+	}
+}

@@ -1,0 +1,10 @@
+	
+public class Ex02 {
+	public static void main(String[] args){
+		String sb = "ab";
+		int a = System.identityHashCode(sb);
+		System.out.println(a);
+		
+	}
+}
+	

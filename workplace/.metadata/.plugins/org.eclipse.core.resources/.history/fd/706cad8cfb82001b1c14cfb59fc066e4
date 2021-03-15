@@ -1,0 +1,6 @@
+
+public class Animal {
+	Animal cat = new Animal();
+	Animal dog = new Animal();
+	Animal horse = new Animal();
+}

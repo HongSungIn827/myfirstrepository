@@ -1,0 +1,10 @@
+
+public class Ex03 {
+	public static void main(String[] args){
+		String temp = "S";
+		temp += "eize";
+		temp += " ";
+		temp += "the day";
+		System.out.println("temp값 = "+temp);
+	}
+}

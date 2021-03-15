@@ -1,0 +1,17 @@
+	
+public class Ex02 {
+	public static void main(String[] args){
+		String sb = "ab";
+		boolean x = hashcode(sb);
+		
+		System.out.println(x);
+	}
+
+	private static boolean hashcode(String sb1) {
+		
+		return hashcode(sb1);
+		
+		
+//		return String;
+	}
+}	
