@@ -1,0 +1,23 @@
+
+public class Man extends BusinessMan {
+	
+	private String company;
+	private String position;
+	
+	Man(){
+		super();
+		System.out.println("MAN 생성자");
+	}
+	
+	public void tellYourInfo(){
+		System.out.println("company "+company);
+		System.out.println("position "+position);
+		tellName();
+	}
+	
+	public static void main(String[] args){
+		Man man = new Man();
+		man.tellYourInfo();
+	}
+
+}

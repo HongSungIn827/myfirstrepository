@@ -1,0 +1,15 @@
+
+public class Man {
+	private String company;
+	private String position;
+	
+	public void tellYourInfo(){
+		System.out.println("company "+company);
+		System.out.println("position "+position);
+	}
+	
+	public static void main(String[] args){
+		new Man();
+	}
+
+}

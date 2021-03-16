@@ -1,0 +1,16 @@
+class Supercls{
+	public Supercls(){
+		System.out.println("I'm Super Class");
+	}
+}
+
+class SubCLS extends Supercls{
+	public SubCLS(){
+		System.out.println("I'm Sub Class");
+	}
+}
+public class SuperSubCon {
+	public static void main(String[] args){
+		new SubCLS();
+	}
+}
