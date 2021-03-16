@@ -1,28 +1,28 @@
-class StaticValues{
-	static int A = 10; // Ç¥ÁØ ±ÔÀ²
-	int b = 20;
-}
-class A{
-	public void doPrintStaticA(){
-		System.out.println("SV.A = "+StaticValues.A++);
-		StaticValues sv = new StaticValues();
-		System.out.println("SV.b = "+sv.b++);
-		}
-}
-class B{
-	public void doPrintStaticA(){System.out.println("SV.A = "+StaticValues.A++);}
-}
-public class Ex01 {
-	/*
-	 * µ¥ÀÌÅÍ ¿µ¿ª = °ªÀ» ÀúÀå,ÇÁ·Î±×·¥ ½ÃÀÛ¿¡¼­ Á¾·á½Ã±îÁö
-	 * ½ºÅØ ¿µ¿ª = ÇÔ¼ö¿¡¼­ ±âº»º¯¼ö¸¦ ¼±¾ð½Ã¿¡ »ç¿ëÇÏ°í ÇÔ¼ö Á¾·áÇÒ¶§ ¸Þ¸ð¸®¿¡¼­ »èÁ¦
-	 * Èü ¿µ¿ª = molloc calloc realloc freeÇÔ¼ö¸¦ °³¹ßÀÚ°¡ »ç¿ëÇØ¼­ Á÷Á¢ ÀÔ·ÂÇÏ°í ¸Þ¸ð¸® ÇÒ´ç ¹× »èÁ¦
-	 */
-	public static void main(String[] agrs){
-		A a = new A();		// Èü¿µ¿ª
-		a.doPrintStaticA();
-		B b = new B();
-		b.doPrintStaticA();
-		System.out.println("SV.A = "+StaticValues.A);
-	}
-}
+//class StaticValues{
+//	static int A = 10; // Ç¥ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//	int b = 20;
+//}
+//class A{
+//	public void doPrintStaticA(){
+//		System.out.println("SV.A = "+StaticValues.A++);
+//		StaticValues sv = new StaticValues();
+//		System.out.println("SV.b = "+sv.b++);
+//		}
+//}
+//class B{
+//	public void doPrintStaticA(){System.out.println("SV.A = "+StaticValues.A++);}
+//}
+//public class Ex01 {
+//	/*
+//	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ = ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½Î±×·ï¿½ ï¿½ï¿½ï¿½Û¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ã±ï¿½ï¿½ï¿½
+//	 * ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ = ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½âº»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½ ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½Ô¼ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ò¶ï¿½ ï¿½Þ¸ð¸®¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//	 * ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ = molloc calloc realloc freeï¿½Ô¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ú°ï¿½ ï¿½ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï°ï¿½ ï¿½Þ¸ï¿½ ï¿½Ò´ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+//	 */
+//	public static void main(String[] agrs){
+//		A a = new A();		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//		a.doPrintStaticA();
+//		B b = new B();
+//		b.doPrintStaticA();
+//		System.out.println("SV.A = "+StaticValues.A);
+//	}
+//}
