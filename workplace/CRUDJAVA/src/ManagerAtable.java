@@ -111,6 +111,7 @@ public class ManagerAtable {
 					}
 				}
 	}
+	
 	public void deleteAtable(){
 		String idx = null;
 		String name = null;
@@ -158,6 +159,7 @@ public class ManagerAtable {
 					}
 				}
 	}
+	
 	public void selectAtable(){
 		Connection conn = null;			//DB 연결 객체
 		PreparedStatement pstmt = null;	//SQL 구문작성객체

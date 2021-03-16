@@ -1,0 +1,18 @@
+
+public class ManagerBtable {
+	public void insertBtable(){
+		
+	}
+	
+	public void updateBtable(){
+		
+	}
+	
+	public void deleteBtable(){
+		
+	}
+	
+	public void selectBtable(){
+		
+	}
+}

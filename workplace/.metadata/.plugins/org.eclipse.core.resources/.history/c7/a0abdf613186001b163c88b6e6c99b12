@@ -1,0 +1,54 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.util.Scanner;
+
+public class ManagerBtable {
+	Scanner scan = new Scanner(System.in);
+	Connection conn = null;
+	PreparedStatement pstmt = null;
+	
+	
+	public void insertBtable(){
+		String idx = null;
+		String voc = null;
+		String syn = null;
+		String sen = null;
+		
+		System.out.println("번호입력");
+		idx = scan.nextLine();
+		System.out.println("단어입력");
+		voc = scan.nextLine();
+		System.out.println("동의어입력");
+		syn = scan.nextLine();
+		System.out.println("문장입력");
+		sen = scan.nextLine();
+		
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		
+		try{
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","AI","1234");
+			System.out.println("DB연결성공");
+			pstmt = conn.prepareStatement("insert into btable "+
+										  "(idx,voc,syn,sen) "+
+										  "VALUES "+
+										  "(?,?,?,?)");
+		}catch(Exception e){
+			System.out.println("error 클래스 파일 없음");
+		}
+	}
+	
+	public void updateBtable(){
+		
+	}
+	
+	public void deleteBtable(){
+		
+	}
+	
+	public void selectBtable(){
+		
+	}
+}

@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class BtableMain {
+	
+	public BtableMain(){
+		Scanner scan = new Scanner(System.in);
+		ManagerBtable ma = new ManagerBtable();
+		
+		while(true){
+			System.out.println("Option -> 1번 insert 2번 update 3번 delete 4번 select");
+			int select = scan.nextInt();
+			
+			
+		}
+	}
+	
+	public static void main(String[] args){
+		new BtableMain();
+	}
+}

@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class BtableMain {
+	
+	public BtableMain(){
+		Scanner scan = new Scanner(System.in);
+		ManagerBtable mb = new ManagerBtable();
+		
+		while(true){
+			System.out.println("Option -> 1번 insert 2번 update 3번 delete 4번 select");
+			int select = scan.nextInt();
+			
+			if(select == 1)
+//				System.out.println("insert 만들 에정");
+				mb.insertBtable();
+			else if(select == 2)
+				System.out.println("update 만들 예정");
+//				mb.updateBtable();
+			else if(select == 3)
+				System.out.println("delete 만들 예정");
+//				mb.deleteBtable();
+			else if(select == 4)
+//				System.out.println("select 만들 예정");
+				mb.selectBtable();
+			else
+				System.exit(1);
+		}
+	}
+	
+	public static void main(String[] args){
+		new BtableMain();
+	}
+}

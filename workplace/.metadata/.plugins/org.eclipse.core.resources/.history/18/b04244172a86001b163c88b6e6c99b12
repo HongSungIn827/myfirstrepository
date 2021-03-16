@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class BtableMain {
+	
+	public BtableMain(){
+		Scanner scan = new Scanner(System.in);
+		ManagerBtable ma = new ManagerBtable();
+		
+	}
+	
+	public static void main(String[] args){
+		
+	}
+}
