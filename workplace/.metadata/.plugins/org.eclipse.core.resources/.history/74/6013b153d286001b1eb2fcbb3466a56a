@@ -1,0 +1,9 @@
+
+public class FirstStringIntro {
+	public static void main(String[] args){
+		// 문자열 선언과 동시에 참조변수로 참조한다
+		String str1 = "Seize";
+		String str2 = "the day";
+		System.out.println(str1 + str2);
+	}
+}

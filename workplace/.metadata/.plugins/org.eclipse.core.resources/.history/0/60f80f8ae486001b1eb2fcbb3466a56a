@@ -1,0 +1,11 @@
+class BankAccount3{
+	String accNumber;
+	String ssNumber;
+	int balance;
+}
+
+public class BankAccountConstructor {
+	public static void main(String[] args){
+		
+	}
+}

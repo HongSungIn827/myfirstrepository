@@ -1,0 +1,30 @@
+class BankAccount3{
+	String accNumber;
+	String ssNumber;
+	int balance;
+	
+	
+	
+	public int deposit(int amount){
+		balance += amount;
+		return balance;
+	}
+	
+	public int withdraw(int amount){
+		balance -= amount;
+		return balance;
+	}
+	
+	public int checkbalance(){
+		System.out.println("계좌번호: "+accNumber);
+		System.out.println("주민번호: "+ssNumber);
+		System.out.println("잔액: "+balance+'\n');
+		return balance;
+	}
+}
+
+public class BankAccountConstructor {
+	public static void main(String[] args){
+		
+	}
+}
