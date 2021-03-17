@@ -1,0 +1,11 @@
+
+public class Triangle {
+	
+	int len;
+	int hei;
+	int res;
+	
+	public static void main(String[] args){
+		
+	}
+}

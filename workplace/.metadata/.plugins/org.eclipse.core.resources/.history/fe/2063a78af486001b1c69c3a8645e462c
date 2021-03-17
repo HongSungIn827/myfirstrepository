@@ -1,0 +1,21 @@
+
+public class Triangle {
+	
+	int len;
+	int hei;
+	int res;
+	
+	public static void main(String[] args){
+		
+	}
+	
+	int storage(){
+		return 0;
+		
+	}
+	
+	int change(){
+		return 0;
+		
+	}
+}
