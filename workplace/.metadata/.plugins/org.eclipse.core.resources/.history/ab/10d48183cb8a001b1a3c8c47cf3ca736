@@ -1,0 +1,14 @@
+class Man{
+	String name;
+	public void tellYourName(){
+		System.out.println("My name is " + name);
+	}
+}
+class BusinessMan extends Man{
+	
+}
+public class MyBusinessMan {
+	public static void main(String[] args){
+		
+	}
+}

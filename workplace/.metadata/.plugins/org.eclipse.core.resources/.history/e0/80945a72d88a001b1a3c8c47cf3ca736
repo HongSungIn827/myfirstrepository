@@ -1,0 +1,24 @@
+class Man2{
+	String name;
+	public Man2(String name){
+		this.name = name;
+	}
+	public void tellYourName(){
+		System.out.println("My name is " + name);
+	}
+}
+
+class BusinessMan2 extends Man2{
+	String company;
+	String position;
+	
+	public BusinessMan2(String name,String company,String position){
+		super(name);
+	}
+}
+
+public class MyBusinessMan2 {
+	public static void main(String[] args){
+		BusinessMan man = new BusinessMan("Rooney","Naver","AI_developer");
+	}
+}

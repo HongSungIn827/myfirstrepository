@@ -1,0 +1,7 @@
+
+public class CheeseCake extends Cake{
+	@override
+	public void yummy(){
+		System.out.println("CheeseCake");
+	}
+}

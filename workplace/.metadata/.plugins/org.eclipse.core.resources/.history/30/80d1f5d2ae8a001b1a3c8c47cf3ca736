@@ -1,0 +1,15 @@
+class A extends Object{
+	
+}
+class B{
+	
+}
+public class Ex03 {
+	public static void main(String[] args){
+		A a = new A();
+		System.out.println(a);
+		
+		B b = new B();
+		System.out.println(b);
+	}
+}

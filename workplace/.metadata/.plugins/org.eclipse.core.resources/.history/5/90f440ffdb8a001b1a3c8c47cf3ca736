@@ -1,0 +1,28 @@
+class Car1{
+	int gasolineGauge;
+	public Car1(int oil){
+		gasolineGauge = oil;
+	}
+}
+class HybridCar extends Car1{
+	int electricGauge;
+	
+	public HybridCar(int oil,int ele){
+		super(oil);
+		electricGauge = ele;
+	}
+}
+public class HybridWaterCar extends HybridCar{
+	int waterGauge;
+	
+	public HybridWaterCar(int oil,int ele,int wat){
+		super(oil,ele);
+		waterGauge = wat;
+	}
+	
+	public void showCurrentGauge(){
+		System.out.println("잔여 가솔린: "+ gasolineGauge);
+		System.out.println("잔여 전기량: "+ electricGauge);
+		System.out.println("잔여 워터량: "+ waterGauge);
+	}
+}

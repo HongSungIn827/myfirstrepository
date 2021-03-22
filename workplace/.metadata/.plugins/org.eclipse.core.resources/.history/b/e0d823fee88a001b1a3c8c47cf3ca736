@@ -1,0 +1,9 @@
+
+public class Animal {	//	Animal 이라는 class 생성
+	
+	//	class에 의해 만들어진 객체를 인스턴스 라고 한다
+	//	그러므로 cat은 객체이다
+	Animal cat = new Animal();
+	Animal dog = new Animal();
+	Animal horse = new Animal();
+}

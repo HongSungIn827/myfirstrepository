@@ -1,0 +1,18 @@
+class Man{
+	String name;
+}
+
+class BusinessMan extends Man{
+	String company;
+	String position;
+	
+	public BusinessMan(String name,String company,String position){
+		super(name);
+	}
+}
+
+public class MyBusinessMan2 {
+	public static void main(String[] args){
+		
+	}
+}

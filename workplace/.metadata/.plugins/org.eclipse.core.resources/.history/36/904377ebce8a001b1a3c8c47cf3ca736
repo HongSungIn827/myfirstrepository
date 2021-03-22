@@ -1,0 +1,9 @@
+
+public class ComFriend extends Friend{
+
+	public ComFriend(String name, String number) {
+		super(name, number);
+		// TODO Auto-generated constructor stub
+	}
+
+}

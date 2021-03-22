@@ -1,0 +1,7 @@
+
+public class Animal {
+	//	Animal 이라는 class 생성
+	Animal cat = new Animal();
+	Animal dog = new Animal();
+	Animal horse = new Animal();
+}
