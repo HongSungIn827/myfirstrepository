@@ -1,5 +1,9 @@
 
 public class UniFriend extends Friend{
+	public UniFriend(String name, String number) {
+		super(name, number);
+		// TODO Auto-generated constructor stub
+	}
 	String major;
 	public UniFriend(String name, String number, String major) {
 		super(name, number);
