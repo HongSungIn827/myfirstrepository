@@ -1,0 +1,11 @@
+
+public class Dto {
+	private int amount;		//	판매수량
+	private int del_rev;	// 	배달 판매금액
+	private int sto_rev;	//	매장 판매금액
+	private int total;		// 	총 매출금액
+	private int prime_cost;	//	원가
+	private int labor_cost;	//	인건비
+	private int net_profit;	//	순 매출금액
+	private String menu;
+}

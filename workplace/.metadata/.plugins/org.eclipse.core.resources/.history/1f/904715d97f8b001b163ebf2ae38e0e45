@@ -1,0 +1,6 @@
+interface Prin{
+	void print();
+}
+public class Ex03 {
+
+}

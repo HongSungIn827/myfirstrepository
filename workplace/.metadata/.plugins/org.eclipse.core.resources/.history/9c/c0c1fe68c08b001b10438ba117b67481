@@ -1,0 +1,5 @@
+import java.util.Scanner;
+
+public class Dao {	//	Data Access Object 
+	Scanner sc = new Scanner(System.in);
+}

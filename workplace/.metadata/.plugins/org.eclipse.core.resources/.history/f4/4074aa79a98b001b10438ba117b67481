@@ -1,0 +1,6 @@
+
+public class Dto {	// Data Transfer Object
+	private int price;
+	private int amount;
+	private String Menu;
+}

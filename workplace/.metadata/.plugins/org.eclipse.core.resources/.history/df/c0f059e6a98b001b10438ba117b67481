@@ -1,0 +1,8 @@
+
+public class Dto {				//	Data Transfer Object
+	private int price;			//	가격
+	private int prime_cost;		//	원가
+	private int amount;			//	수량
+	private int net_profit;		//	순이익
+	private String Menu;		//	메뉴
+}

@@ -1,0 +1,12 @@
+class Updater{
+	public void update(int count){
+		count++;
+	}
+}
+public class Counter {
+	int count = 8;
+	public static void main(String[] args){
+		Counter myCounter = new Counter();
+		System.out.println("before update:"+myCounter.count);
+	}
+}

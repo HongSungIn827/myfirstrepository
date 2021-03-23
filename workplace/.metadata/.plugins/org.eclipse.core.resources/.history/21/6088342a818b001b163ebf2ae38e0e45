@@ -1,0 +1,23 @@
+interface Prin{
+	void print(String doc);
+}
+
+class Sprin implements Prin{
+
+	@Override
+	public void print(String doc) {
+		
+	}
+	
+}
+
+class Mprin extends Sprin{
+	@Override
+	public void print(String doc) {
+		
+	}
+}
+
+public class Ex03 {
+
+}

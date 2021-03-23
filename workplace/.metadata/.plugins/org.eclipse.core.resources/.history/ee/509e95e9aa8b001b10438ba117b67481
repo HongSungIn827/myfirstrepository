@@ -1,0 +1,44 @@
+
+public class Dto {				//	Data Transfer Object
+	private int price;			//	가격
+	private int prime_cost;		//	원가
+	private int amount;			//	수량
+	private int net_profit;		//	순이익
+	private String Menu;		//	메뉴
+	
+	
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	
+	public int getPrime_cost() {
+		return prime_cost;
+	}
+	public void setPrime_cost(int prime_cost) {
+		this.prime_cost = prime_cost;
+	}
+	
+	public int getAmount() {
+		return amount;
+	}
+	public void setAmount(int amount) {
+		this.amount = amount;
+	}
+	public int getNet_profit() {
+		return net_profit;
+	}
+	public void setNet_profit(int net_profit) {
+		this.net_profit = net_profit;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+}

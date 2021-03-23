@@ -1,0 +1,17 @@
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+
+public class AAAA extends JFrame{
+	private JTextField textField;
+	public AAAA() {
+		getContentPane().setLayout(null);
+		
+		textField = new JTextField();
+		textField.setBounds(12, 10, 116, 21);
+		getContentPane().add(textField);
+		textField.setColumns(10);
+	}
+	public static void main(String[] args) {
+		
+	}
+}
