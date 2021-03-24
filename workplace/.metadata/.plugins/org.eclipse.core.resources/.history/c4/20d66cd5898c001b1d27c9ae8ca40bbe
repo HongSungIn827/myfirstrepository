@@ -1,0 +1,29 @@
+
+class C1 {
+	int A;
+	int B;
+	
+	
+	C1(){}
+	
+	C1(int A, int B) {
+		int tmp = A;
+		A = B;
+		B = tmp;
+	}
+	
+}
+
+
+public class CallByValue {
+	
+	public static void main(String args[]) {
+		C1 c = new C1(1, 2);
+		System.out.println(c.A);
+		
+	}
+	
+	
+}
+
+

@@ -1,0 +1,13 @@
+
+public class CallByValue {
+	public static void main(String[] args){
+		int a = 1;
+		int b = 2;
+		swap(a,b);
+	}
+
+	private static void swap(int a, int b) {
+		// TODO Auto-generated method stub
+		
+	}
+}

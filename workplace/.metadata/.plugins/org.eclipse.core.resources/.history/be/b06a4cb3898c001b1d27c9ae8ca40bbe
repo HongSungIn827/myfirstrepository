@@ -1,0 +1,26 @@
+
+class C1 {
+	int A=1;
+	int B=2;
+	
+}
+
+
+public class CallByValue {
+	
+	public static void main(String args[]) {
+		C1 c = new C1();
+		swap(c.A, c.B);
+		System.out.println(c.A);
+		
+	}
+	
+	private static void swap(int a, int b) {
+		int tmp = a;
+		a = b;
+		b = tmp;
+	
+	}
+}
+
+

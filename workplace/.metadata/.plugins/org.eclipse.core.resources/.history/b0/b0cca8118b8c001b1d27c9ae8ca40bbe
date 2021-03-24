@@ -1,0 +1,35 @@
+class MyClass{
+    int index;
+
+    public MyClass(int index) {
+        this.index = index;
+    }
+
+    public int getIndex() {
+        return index;
+    }
+
+    public void setIndex(int index) {
+        this.index = index;
+    }
+}
+
+
+public class JavaCallByValue {
+   public static void main(String[] args) {
+        MyClass myClass1 = new MyClass(1);
+        MyClass myClass2 = new MyClass(2);
+
+        //두개의 필드 값을 바꿔 보자
+        swapValue(myClass1, myClass2);
+        System.out.println(myClass1.getIndex()); //출력결과 2
+        System.out.println(myClass2.getIndex()); //출력결과 1
+   }
+
+   static void swapValue(MyClass m1, MyClass m2);{
+        int tmpIndex = m1.getIndex();
+        m1.setIndex(m2.getIndex());
+        m2.setIndex(tmpIndex);
+    }
+
+

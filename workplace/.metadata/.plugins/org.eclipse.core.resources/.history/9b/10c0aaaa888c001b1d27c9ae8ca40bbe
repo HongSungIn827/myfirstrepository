@@ -1,0 +1,19 @@
+
+public class CallByValue {
+	static int a = 1;
+	static int b = 2;
+	
+	public static void main(String[] args){
+		
+		swap(a, b);
+		System.out.println(a);
+		
+	}
+
+	private static void swap(int a, int b) {
+		int tmp = a;
+		a = b;
+		b = tmp;
+	
+	}
+}
