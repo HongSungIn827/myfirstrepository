@@ -1,0 +1,16 @@
+
+public class Student {
+	String major;
+	int id_num;
+	
+	public static void main(String[] args){
+		Student student = new Student();
+		student.major("computer");
+		System.out.println(student.major);
+		System.out.println(student.id_num);
+	}
+
+	private void major(String string) {
+		System.out.println(major);
+	}
+}

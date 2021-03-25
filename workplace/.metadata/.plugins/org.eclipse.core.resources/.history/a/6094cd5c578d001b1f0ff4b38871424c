@@ -1,0 +1,14 @@
+
+public class Student {
+	static String major;
+	static int id_num;
+	
+	public static void main(String[] args){
+		Student student = new Student();
+		student.major = major;
+		student.id_num = id_num;
+		
+		System.out.println(major);
+	}
+
+}
