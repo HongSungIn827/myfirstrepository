@@ -1,0 +1,9 @@
+
+public class HouseDog extends Dog{
+	public static void main(String[] args){
+		HouseDog houseDog = new HouseDog();
+		houseDog.setName("Dream");
+		houseDog.sleep();
+		System.out.println(houseDog.name);
+	}
+}

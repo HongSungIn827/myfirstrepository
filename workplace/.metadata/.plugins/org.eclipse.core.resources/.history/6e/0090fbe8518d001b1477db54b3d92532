@@ -1,0 +1,4 @@
+
+public class Person {
+	Person(int number){int age = number;}
+}
