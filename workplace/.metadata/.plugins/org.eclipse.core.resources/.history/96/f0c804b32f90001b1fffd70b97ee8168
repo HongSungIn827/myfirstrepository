@@ -1,0 +1,20 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class DataBaseManager implements ActionListener{
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		try{
+			int a = 1/0;
+			//	오라클 연결하는 jar 파일 추가 확인
+			Class.forName("");
+		}catch(Exception exc){
+			exc.printStackTrace();
+		}
+		
+		System.out.println("데이터베이스 매니저...");
+		
+	}
+
+}

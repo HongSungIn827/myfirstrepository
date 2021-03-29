@@ -1,0 +1,18 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class DataBaseManager implements ActionListener{
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		try{
+			
+		}catch(Exception exc){
+			
+		}
+		
+		System.out.println("데이터베이스 매니저...");
+		
+	}
+
+}

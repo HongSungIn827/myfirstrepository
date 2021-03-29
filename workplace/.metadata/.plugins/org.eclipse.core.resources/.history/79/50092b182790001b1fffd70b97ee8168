@@ -1,0 +1,19 @@
+import javax.swing.JFrame;
+
+public class Ex01 extends JFrame{
+	
+	Ex01(){
+		setSize(500,600);
+		setVisible(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		for(int i = 0 ; i < 10 ; i++){
+			JFrame jf = new JFrame(i+"");
+			jf.setSize(500,600);
+			jf.setVisible(true);
+		}
+	}
+	
+	public static void main(String[] args){
+		new Ex01();
+	}
+}

@@ -1,0 +1,51 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+
+import javax.swing.JOptionPane;
+
+public class DataBaseManager implements ActionListener{
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		Connection conn = null; // 데이터 베이스 연결 객체
+		PreparedStatement pstmt = null;
+		try{
+//			int a = 1/0;
+			//	oracle 연결하는 jar 파일 추가 확인
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","AI","1234");
+			pstmt = conn.prepareStatement("insert into atable values(?,?,?,?)");
+			pstmt.setInt(0, Integer.parseInt(Ex01.tf_idx.getText()));
+			pstmt.setString(1, Ex01.tf_name.getText());
+			pstmt.setString(2, Ex01.tf_gender.getText());
+			pstmt.setString(3, Ex01.tf_remark.getText());
+			pstmt.executeUpdate();
+		}
+		catch(ArithmeticException ae){
+			JOptionPane.showMessageDialog(null, "0으로 나눌 수 없다.");
+		}
+		catch(ClassNotFoundException cne){
+			JOptionPane.showMessageDialog(null, "클래스 없다.");
+		}
+		
+		catch(Exception exc){
+			exc.printStackTrace();
+		}
+		finally{
+			try{
+				if(pstmt != null) pstmt.close();
+				if(pstmt != null) conn.close();
+			}catch(Exception close){
+				
+			}
+		}
+		
+		System.out.println("데이터베이스 매니저...");
+		
+	}
+
+}
