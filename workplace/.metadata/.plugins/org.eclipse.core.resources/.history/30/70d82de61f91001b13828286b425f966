@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+
+public class HamOrder {
+	static ArrayList<HamInfo> hamInfo = new ArrayList<>();
+	static ArrayList<HamBill> hamBill = new ArrayList<>();
+	
+	public static void main(String[] args){
+		HamOrder hamOrder = new HamOrder();
+		hamOrder.process();
+		
+	}
+	void process() {
+        int i = 0, total = 0;
+        do hamInfo.add(new HamInfo()); while (hamInfo.get(i++).inputMenu());
+        hamInfo.remove(i-1);
+        i=0;
+        do hamBill.add(new HamBill()); while (hamBill.get(i++).inputOrder(hamInfo.size()));
+        hamBill.remove(i-1);
+        for (HamInfo j : hamInfo) j.printMenu();
+        System.out.println();
+        for (HamBill j : hamBill) total += j.printOrder(hamInfo.size());
+        System.out.printf("\n\n---총 매출---\n\\%d", total);
+        System.out.println("\n\n---재고 결산---");
+        for (HamInfo j : hamInfo) System.out.printf("%s %d개 판매 [재고 %d개]\n", j.name, j.sell, j.stock);
+    }
+}

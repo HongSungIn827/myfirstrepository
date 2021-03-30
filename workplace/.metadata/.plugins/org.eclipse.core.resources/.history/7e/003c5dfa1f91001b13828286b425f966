@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class HamBill {
+	int num, count, point=0;
+	String id;
+	short [] hamList;
+	boolean inputOrder(int hamCount){
+		hamList = new short[hamCount];
+		Scanner sc = new Scanner(System.in);
+		num = sc.nextInt();
+		
+		if(num==0) return false;
+		id = sc.next();
+		count = sc.nextInt();
+		for(int i = 0 ; i < count ; i++) hamList[sc.nextInt()-1]++;
+		return true;
+	}
+	
+	int printOrder(int hamCount){
+		int sum = 0;
+		System.out.printf("[%d] %s\n",num,id);
+		for(int i = 0 ; i < hamCount ; i++){
+			if(hamList[i] != 0){
+				HamInfo ham = HamOrder.hamInfo.get(i);
+				System.out.printf("\t%s * %d = %d\n",ham.name,hamList[i],ham.price*hamList[i]);
+				ham.sell += hamList[i];
+				ham.stock -= hamList[i];
+				sum += ham.price*hamList[i];
+			}
+		}
+		for (int i = HamOrder.hamBill.size()-1;i>0;i--){
+			if(id.equals(HamOrder.hamBill.get(i).id) && HamOrder.hamBill.get(i).point != 0){
+				point += HamOrder.hamBill.get(i).point;
+				break;
+			}
+		}
+		point += (int) (sum*0.05);
+		System.out.printf("합계 : %d원 (%d Point)\n",sum,point);
+		return sum;
+	}
+}

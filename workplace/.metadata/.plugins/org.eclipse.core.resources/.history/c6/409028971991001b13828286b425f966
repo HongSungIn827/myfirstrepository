@@ -1,0 +1,11 @@
+import javax.swing.JPanel;
+import javax.swing.JButton;
+
+public class CPanel extends JPanel{
+	public CPanel() {
+		
+		JButton btnNewButton = new JButton("New button");
+		add(btnNewButton);
+	}
+
+}
