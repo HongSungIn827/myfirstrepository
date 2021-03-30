@@ -1,0 +1,8 @@
+class Person extends Object{
+	String name;
+
+	Person(String name) {
+		this.name = name;
+	}
+	
+}

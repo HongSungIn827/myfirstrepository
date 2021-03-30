@@ -1,0 +1,17 @@
+
+public class Point implements Cloneable{
+	private int xpos;
+	private int ypos;
+	
+	public Point(int xpos, int ypos){
+		super();
+		this.xpos = xpos;
+		this.ypos = ypos;
+	}
+
+	@Override
+	public String toString() {
+		return "Point [xpos="+xpos+",ypos="+ypos+"]";
+	}
+	
+}

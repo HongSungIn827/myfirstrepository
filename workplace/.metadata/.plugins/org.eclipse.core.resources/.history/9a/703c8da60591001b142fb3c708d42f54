@@ -1,0 +1,10 @@
+import javax.swing.JFrame;
+
+public class Ex05 extends JFrame{
+	public Ex05() {
+		getContentPane().setLayout(null);
+	}
+	public static void main(String[] args) {
+		new Ex05();
+	}
+}

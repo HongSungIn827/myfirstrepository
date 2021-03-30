@@ -1,0 +1,11 @@
+class Person{
+	String name;
+	Person(String name){
+		this.name = name;
+	}
+}
+public class Ex01 {
+	public static void main(String[] args){
+		
+	}
+}
