@@ -1,0 +1,15 @@
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
+public class Test extends JFrame{
+	public static void main(String[] args) {
+		try {
+			ImageIO.read(new File("../jam.jpg"));
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+	}
+}
