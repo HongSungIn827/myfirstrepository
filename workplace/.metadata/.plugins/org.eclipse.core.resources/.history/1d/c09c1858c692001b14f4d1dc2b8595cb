@@ -160,9 +160,9 @@ public class Hamberger {
  
  
         // 컴포넌트
-        frame.getContentPane().add(pNorth, BorderLayout.NORTH);
-        frame.getContentPane().add(ta, BorderLayout.CENTER);
-        frame.getContentPane().add(pSouth, BorderLayout.SOUTH);
+        frame.add(pNorth, BorderLayout.NORTH);
+        frame.add(ta, BorderLayout.CENTER);
+        frame.add(pSouth, BorderLayout.SOUTH);
         frame.setVisible(true);
  
         // 이벤트단
@@ -238,4 +238,5 @@ public class Hamberger {
     public static void main(String[] args) {
         new Hamberger();
     }
+ 
 }
