@@ -1,0 +1,8 @@
+import java.util.Vector;
+
+public class DBManager {
+	public Vector<Vector> getData(){
+		
+		return null;
+	}
+}

@@ -1,0 +1,29 @@
+import java.awt.BorderLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class JTableEx01 extends JFrame{
+	JPanel center_panel = new JPanel();
+	JPanel bottom_panel = new JPanel();
+	JButton btn_select = new JButton("조회");
+	
+	public JTableEx01(){
+		
+		bottom_panel.add(btn_select);
+		
+		getContentPane().add(center_panel,BorderLayout.CENTER);
+		getContentPane().add(bottom_panel,BorderLayout.SOUTH);
+		
+		
+		
+		setSize(800,600);
+		setVisible(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	
+	public static void main(String[] args){
+		new JTableEx01();
+	}
+}

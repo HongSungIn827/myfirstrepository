@@ -1,0 +1,24 @@
+import java.awt.BorderLayout;
+
+import javax.swing.JFrame;
+
+public class JTableEx01 extends JFrame{
+	JPanel center_panel = new JPanel();
+	JPanel bottom_panel = new JPanel();
+	
+	public JTableEx01(){
+		
+		getContentPane().add(center_panel,BorderLayout.CENTER);
+		getContentPane().add(center_panel,BorderLayout.SOUTH);
+		
+		
+		
+		setSize(800,600);
+		setVisible(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	
+	public static void main(String[] args){
+		new JTableEx01();
+	}
+}
